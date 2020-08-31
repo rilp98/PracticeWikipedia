@@ -1,0 +1,229 @@
+:root{
+    --fuente:17;
+    --familia:Helvetica,Arial,sans-serif;
+    --colorAzul_oscuro:#36c;
+    --colorGris_claro:#a2a9b1;
+}
+*{
+    margin:0;
+    padding:0; 
+}
+a{
+    text-decoration:none;
+}
+main .main_titulo-container{
+    font-family:"Linux Libertine","Hoefler Text",Georgia,"Times New Roman",Times,serif;
+    margin-top:55px;
+    margin-bottom:30px;
+    text-align: center;
+    
+}
+
+main .main_titulo-container h1{
+    text-transform:uppercase;
+    font-size:28px;
+    margin:0px;
+    font-weight:lighter;
+    letter-spacing:2px;
+    
+}
+
+main .main_titulo-container span{
+    font-size:1.5em;
+}
+
+main .main_titulo-container p{
+    margin-top:5px;
+    font-size:16px;
+
+}
+
+main .main_grid-container{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows:repeat(5,70px);
+    text-align:center;
+    justify-content:center;
+    align-content:center;
+    font-family: Helvetica,Arial,sans-serif;
+    line-height:26px;
+}
+
+main .main_grid-container a strong{
+    color:var(--colorAzul_oscuro);
+    font-size:var(--fuente);
+    cursor: pointer;
+    text-decoration:none;
+}
+
+main .main_grid-container strong:hover{
+    text-decoration:underline;
+}
+
+
+main .main_grid-container p:nth-child(2){
+    color:#54595d;
+}
+
+main .main_grid-primeraYultimaFila{
+grid-column-start:1;
+grid-column-end:4;
+display:flex;
+
+}
+
+main .main_grid-primeraYultimaFila div:first-child{
+    padding-left:106px;
+    padding-right:158px;
+}
+main .main_grid-container .segundaFilaIzquierda{
+   padding-left:28px;
+}
+
+main .main_grid-container div:nth-child(3){
+    padding-left:5px;
+ }
+
+main .main_grid-container div:nth-child(6){
+    padding-left:28px;
+ }
+
+main .main_grid-container div:nth-child(7){
+    padding-left:28px;
+ }
+
+ main .main_grid-container div:nth-child(8){
+    padding-right:16px;
+ }
+
+main .main_grid-imagen{
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Wikipedia-logo_ka.png/900px-Wikipedia-logo_ka.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    width:210px;
+    height:210px;
+    margin:auto;
+    grid-row-start:2;
+    grid-row-end:5;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+main .main_input{
+    width:480px;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+main .main_input-container{
+    display:flex;
+    border: 1px solid var(--colorGris_claro);
+    height:45px;
+    align-items:center;
+    border:0px 3px 3px 0px;
+}
+main .main_input-container input{
+    border:none;
+    outline:none;
+    padding-left:10px;
+    width:80%;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size:var(--fuente);
+    
+}
+
+main .main_input-container:hover{
+    border-color:#72777d;
+    
+}
+
+main .main_input-container:focus-within{
+    border:2px solid var(--colorAzul_oscuro);
+    
+}
+
+main .main_input-container span{
+    margin-left:20px;
+}
+
+main .main_input .icono{
+background-color:var(--colorAzul_oscuro);
+height:48px;
+width:60px;
+border:none;
+
+cursor: pointer;
+}
+.main_input .icono{
+    font-size:26px;
+    color:white;
+}
+main .main_input select{
+    border:none;
+    cursor: pointer;
+}
+
+.opcionIdiomas{
+    padding-top:40px;
+    width:400px;
+    margin:auto;
+    position: relative;
+    height:40px;
+
+}
+
+.opcionIdiomas div{
+    width:20%;
+    height:10px;
+}
+
+.opcionIdiomas .lineaDerecha{
+ position:absolute;
+ top:62px;
+ left:-53px;
+}
+
+.opcionIdiomas .lineaIzquierda{
+    position:absolute;
+    top:62px;
+    right:-53px;
+   }   
+
+.opcionIdiomas hr{
+    color:var(--colorGris_claro);
+}
+
+.opcionIdiomas .opcionIdiomas_seleccionar-lista{
+    display:flex;
+    margin:auto;
+    width:340px;
+    height:40px;
+    text-align:center;
+    border:1px solid var(--colorGris_claro);
+
+}
+.opcionIdiomas .opcionIdiomas_seleccionar-lista span{
+    align-self:center;
+    margin:auto;
+    font-size:var(--fuente);
+    font-family:var(--familia);
+    color:var(--colorAzul_oscuro);
+    font-weight:bold;
+}
+
+.opcionIdiomas .opcionIdiomas_seleccionar-lista .opcionIdiomas_seleccionar-iconoBuscar{
+font-size:20px;
+color:var(--colorAzul_oscuro);
+padding-top:5px;
+padding-right:15px;
+}
+
+.opcionIdiomas .opcionIdiomas_seleccionar-lista .opcionIdiomas_seleccionar-iconoIdioma{
+    font-size:20px;
+    color:var(--colorAzul_oscuro);
+    padding-top:5px;
+}
+
